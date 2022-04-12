@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "lib": ["es2021"],
+        "module": "commonjs",
+        "target": "es2021",
+
+        //strict rules
+        "strict": true,
+        "alwaysStrict": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictNullChecks": true,
+        "strictBindCallApply": true,
+        "strictFunctionTypes": true,
+        "strictPropertyInitialization": true,
+
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "watch": true,
+        "outDir": "dist",
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "moduleResolution": "node",
+        "types": ["node"]
+    },
+
+    "types": ["node"],
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "cypress", "**/*.spec.ts"],
+    "typeRoots": ["../node_modules/@types"],
+    "display": "Node 16"
+}

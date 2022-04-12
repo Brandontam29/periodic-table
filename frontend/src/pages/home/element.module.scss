@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 6px;
+    border: 1px solid black;
+
+    .number {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .symbol {
+        display: flex;
+        justify-content: center;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .name {
+        display: flex;
+        justify-content: center;
+        font-size: 13px;
+    }
+}
