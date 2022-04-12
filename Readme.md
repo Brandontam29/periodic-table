@@ -1,51 +1,46 @@
-# React/Django Takehome
+# Periodic Table
 
-The goal of this takehome is to show basic proficiency with a web framework used at Nanoacademic. It should not take longer than 1-2 hours. The project should preferably be completed with React or Django (Django templates). If you are not comfortable with either, you can use vanilla html/js or another python framework (e.g. with jinja templates). Please contact the Nanoacademic team member if you have any questions.
+This project was complete within 2 hours using React for the frontend and NodeJs for the backend. For styling there is a mix tailwindcss and sass modules.
 
-## Table of contents
+On the website, you can see the first 54 elements of the periodic table. If you click on an element, you can see the details.
 
-- [The rules](#the-rules)
-- [The challenge](#the-challenge)
-- [The requirements](#the-requirements)
-- [Notes](#notes)
-- [Examples](#examples)
+## Run the Project
+1. Clone the project
 
-## The rules
+`
+git clone
+`
 
-- Read and understand [The challenge](#the-challenge)
-- Create solutions that satisfy [The requirements](#the-requirements)
-- Send us a link to the repository containing your solution once you are done
+2. Install frontend dependencies and run
 
-## The challenge
+`
+cd frontend
+`
 
-Build a periodic table that displays the symbol, atomic number, and name of the first 54 elements in the proper order and layout. The layout does not require domain knowledge (see notes). You will also create a detail view that shows all information provided by the api for a specific element.
+`
+npm i
+`
 
-## The requirements
+`
+npm run dev
+`
 
-- Call the api "https://periodic-table-elements-info.herokuapp.com/elements"
-- Backend capable technologies should store the json in a cache or save it to the database. Frontend should save it to browser storage.
-- Create a main page view that displays the **first 54 elements** of the periodic table. Elements should show Atomic number, symbol, and name.
-- Fix the error in the API if it still exists. Adjust boron to have period 2 (so that it is on row 2).
-- Create a detail view that shows all information for that element.
-- Display the detail view on clicking an element. The detail view should be shown on the same page or in a new page. New pages should include a back button to the main periodic table.
-- Include a Readme with instructions to run your project. You may assume the reader has npm and/or python installed. (hint: include a package.json or requirements.txt)
+3. Open second terminal and prepare the backend
 
+`
+cd backend
+`
 
-## Notes
+`
+npm i
+`
 
-- The design does not have to match the examples perfectly.
-- You are free to use a UI library
-- The period corresponds to the row
-- The group corresponds to the column
-- The color coding can be gotten from the cpkHexColor field
-- Boron's period is wrong. Adjust it's period to be 2.
-- A backup of the json is included if there is an issue with the API.
+`
+npm run server
+`
 
-## Examples
+## Possible Improvements
 
-The below assets have been provided to help complete the challenge.
-
-| Name                                      | Description                    |
-| ----------------------------------------- | ------------------------------ |
-| [main_page.png](assets/main_page.png)     | Sketch of the periodic table   |
-| [detail_page.png](assets/detail_page.png) | Sketch of possible detail page |
+1. The responsiveness of table can be better at large and smaller screens. I would need to add calc to the font size in the css.
+2. Use NextJs for static rendering for faster page load.
+3. Separate Routes and Providers.
